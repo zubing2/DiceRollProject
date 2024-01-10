@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll Roll Roll Your Dice</title>
+    <link rel="stylesheet" href ="style.css">
+    <script async src="script.js"> </script>
+</head>
+<body>
+    <h1> Roll Roll Roll Your Dice </h1>
+    <form action="script.js">
+        <label for="diceC">How many dice would you like to roll?</label><br>
+        <input type="radio" id="oneD" name="dice_count" value="One">
+        <label for="oneD">One</label><br>
+        <input type="radio" id="twoD" name="dice_count" value="Two">
+        <label for="twoD">Two</label><br>
+        <input type="radio" id="threeD" name="dice_count" value="Three">
+        <label for="threeD">Three</label><br>
+        <input type="submit" id="submit_count" value="Submit">
+    </form>
+    <form action="script.js">
+        <label for="num_roll">How many times do you want to roll your dice?</label><br>
+        <input type="text" id="num_rolls" name="num_roll"><br>
+        <input type="submit" id="submit_rolls" value="Submit">
+    </form>
+    <img src="Dice(1).png">
+</body>
+</html>

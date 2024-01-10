@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    text-indent: 100px;
+    justify-content: center;
+    margin-top: -7px;
+    margin-left: -7px;
+    margin-right: -7px;
+    padding-top: 25px;
+    height: 10vh;
+    border-bottom: 2px solid black;
+    background-color: #A11DE2;
+    color: #fffceb;
+    font-family:"Copperplate Gothic";
+    font-size: 50px;
+}
+
+body {
+    background-color: #B44AE8;
+}
+
+form {
+    color: #fffceb;
+
+}
+#submit_count {
+    margin: 5px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
