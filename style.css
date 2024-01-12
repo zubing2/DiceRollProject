@@ -16,15 +16,45 @@ h1 {
 
 body {
     background-color: #B44AE8;
+    font-family: "Copperplate Gothic";
 }
 
 form {
     color: #fffceb;
 
 }
-#submit_count {
+#submit {
     margin: 5px;
     padding: 7px;
     border-radius: 10px;
+    border: none;
 }
 
+#test {
+    width: 100px;
+    height: 100px;
+}
+
+.nums{
+    justify-content: center;
+    margin-left: 410px;
+    margin-right: auto;
+    margin-top: -185px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid; 
+}
+
+td, th {
+    border-collapse: collapse;
+    border: 1px solid;  
+    text-align: center;
+    width: 50px;
+}
+.nums2 {
+    justify-content: center;
+    margin-left: 1022px;
+    margin-right: auto;
+    margin-top: -205px;
+    border-collapse: collapse;
+}

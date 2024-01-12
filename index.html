@@ -9,22 +9,100 @@
     <script async src="script.js"> </script>
 </head>
 <body>
-    <h1> Roll Roll Roll Your Dice </h1>
-    <form action="script.js">
+    <h1>  Roll Roll Roll Your Dice </h1>
+    <form id="form_info" action="script.js">
         <label for="diceC">How many dice would you like to roll?</label><br>
         <input type="radio" id="oneD" name="dice_count" value="One">
         <label for="oneD">One</label><br>
         <input type="radio" id="twoD" name="dice_count" value="Two">
         <label for="twoD">Two</label><br>
         <input type="radio" id="threeD" name="dice_count" value="Three">
-        <label for="threeD">Three</label><br>
-        <input type="submit" id="submit_count" value="Submit">
-    </form>
-    <form action="script.js">
+        <label for="threeD">Three</label><br><br>
         <label for="num_roll">How many times do you want to roll your dice?</label><br>
-        <input type="text" id="num_rolls" name="num_roll"><br>
-        <input type="submit" id="submit_rolls" value="Submit">
+        <input type="text" id="num_rolls" name="roll_count"><br>
+        <input type="submit" id="submit" value="Submit">
     </form>
-    <img src="Dice(1).png">
+    <table class="nums" style="width:30%">
+        <tr style="width:100px">
+          <th>Mean</th>
+        </tr>
+        <tr style="width:100px">
+          <td>0</td>
+        </tr>
+        <tr style="width:100px">
+            <th>Median</th>
+          </tr>
+          <tr style="width:100px">
+            <td>0</td>
+          </tr>
+          <tr style="width:100px">
+            <th>Mode</th>
+          </tr>          
+          <tr style="width:100px">
+            <td>0</td>
+          </tr>
+          <tr style="width:100px">
+            <th>Doubles</th>
+          </tr>          
+          <tr style="width:100px">
+            <td>0</td>
+          </tr>
+          <tr style="width:100px">
+            <th>Triples</th>
+          </tr>          
+          <tr style="width:100px">
+            <td>0</td>
+          </tr>
+      </table>
+      <table class="nums2" style="width:45%">
+        <tr style="width:50px">
+          <th>One</th>
+          <th>Two</th>
+          <th>Three</th>
+          <th>Four</th>
+          <th>Five</th>
+          <th>Six</th>
+        </tr>
+        <tr style="width:50px">
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr style="width:50px">
+            <th>Seven</th>
+            <th>Eight</th>
+            <th>Nine</th>
+            <th>Ten</th>
+            <th>Eleven</th>
+            <th>Twelve</th>
+          </tr>
+          <tr style="width:50px">
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr style="width:50px">
+            <th>Thirteen</th>
+            <th>Fourteen</th>
+            <th>Fifteen</th>
+            <th>Sixteen</th>
+            <th>Seventeen</th>
+            <th>Eighteen</th>
+          </tr>
+          <tr style="width:50px">
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+      </table>
 </body>
 </html>
