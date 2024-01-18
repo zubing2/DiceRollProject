@@ -2,10 +2,7 @@ h1 {
     text-align: center;
     text-indent: 100px;
     justify-content: center;
-    margin-top: -7px;
-    margin-left: -7px;
-    margin-right: -7px;
-    padding-top: 25px;
+    text-align: center;
     height: 10vh;
     border-bottom: 2px solid black;
     background-color: #A11DE2;
@@ -17,6 +14,8 @@ h1 {
 body {
     background-color: #B44AE8;
     font-family: "Copperplate Gothic";
+    text-align: center;
+    align-items: center;
 }
 
 form {
@@ -24,6 +23,7 @@ form {
 
 }
 #submit {
+
     margin: 5px;
     padding: 7px;
     border-radius: 10px;
@@ -31,18 +31,18 @@ form {
 }
 
 #test {
+    text-align: center;
     width: 100px;
     height: 100px;
 }
 
-.nums{
+table {
     justify-content: center;
-    margin-left: 410px;
-    margin-right: auto;
-    margin-top: -185px;
     text-align: center;
     border-collapse: collapse;
     border: 1px solid; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 td, th {
@@ -50,11 +50,4 @@ td, th {
     border: 1px solid;  
     text-align: center;
     width: 50px;
-}
-.nums2 {
-    justify-content: center;
-    margin-left: 1022px;
-    margin-right: auto;
-    margin-top: -205px;
-    border-collapse: collapse;
 }
