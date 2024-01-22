@@ -4,6 +4,7 @@ let totalVal = 0;
 let mean = 0;
 let median = 0;
 let mode = 0;
+let doubles = 0, triples = 0;
 let rolledNums = [];
 let freqOne = 0;
 let freqTwo = 0;
@@ -40,17 +41,21 @@ roll.addEventListener("click", rollDice);
 
 function rollDice(){
     for (let i = 0; i < numRolls; i++) {
+        let totalRolls = 0;
         for (let i = 0; i < numDice; i++) {
             let number = Math.floor(((Math.random() * 6) + 1))
-            rolledNums.push(number);
-            totalVal += number;
+            totalRolls += number;
         }
+        totalVal += totalRolls;
+        rolledNums.push(totalRolls);
       }
+      rolledNums.sort();
       console.log(totalVal);
       calculateMean();
       calculateMedian();
-      console.log(rolledNums)
+      console.log(rolledNums.sort());
       updateFrequencies();
+      reset();
 };
 
 function updateFrequencies() {
@@ -129,17 +134,37 @@ function updateFrequencies() {
         document.getElementById("freq-18").innerHTML = freqEighteen;
     }
 }
-function calculateMean(){
+function calculateMean() {
     mean = (totalVal/numRolls).toFixed(2);
     document.getElementById("mean").innerHTML = mean;
 }
-function calculateMedian(){
+function calculateMedian() {
     rolledNums.sort()
-    median = rolledNums[rolledNums.length/2];
+    if(rolledNums.length != 1 && rolledNums.length  % 2 != 0){
+    median = rolledNums[rolledNums.length / 2 + 1];
+    }
+    else if(rolledNums.length % 2 == 0 && rolledNums.length != 1){
+        median = Math.round((rolledNums[rolledNums.length / 2] + rolledNums[rolledNums.length / 2 -1]) / 2)
+    }
+    else{
+        median = rolledNums[0];
+    }
     document.getElementById("median").innerHTML = median;
 }
-function calculateMode(){
 
+function calculateMode() {
+    var empty = []
+    i = 0
+    max = 0
+    while (i<numRolls.length){
+       if (numRolls[i]==numRolls[i+1]){
+           empty = numRolls[i] 
+       i += 1
+        }else{
+          i +=1
+          }
+     }
+    document.getElementById("mode").innerHTML = empty;
 }
 
 function reset(){
